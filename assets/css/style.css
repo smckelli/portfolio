@@ -38,7 +38,7 @@ nav a{
     margin: 0 50px;
 }
 
-#name-container {
+.name-container {
     display: flex;
     align-items: flex-start;
     text-align: right;
@@ -48,6 +48,14 @@ nav a{
 }
 
 .hero {
+    align-items: flex-start;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../images/wisla-denim5.jpg);
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 500px;
+
 }
