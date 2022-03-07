@@ -1,0 +1,56 @@
+/* ** Root Directory ** */
+
+:root {
+    --colorBackground: #ededf6;
+    --colorPrimary: #30333c;
+    --colorSecondary: #93c7cd;
+    --colorTertiary: #445876;
+    --borderFlare: 6px solid var(--colorSecondary);
+}
+
+/* ** Base CSS ** */
+
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ** Elements ** */
+
+html,
+body {
+    background: var(--colorBackground);
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colorPrimary);
+    height: 150px;
+}
+
+nav a{
+    color: var(--colorSecondary);
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0 50px;
+}
+
+#name-container {
+    display: inline-block;
+    text-align: right;
+    background: var(--colorSecondary);
+    margin: 20px 0 20px 0;
+    width: 300px;
+}
+
+.my-name-is {
+    background: var(--colorSecondary);
+    color: var(--colorPrimary);
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
