@@ -39,18 +39,15 @@ nav a{
 }
 
 #name-container {
-    display: inline-block;
+    display: flex;
+    align-items: flex-start;
     text-align: right;
+    justify-content: space-around;
     background: var(--colorSecondary);
-    margin: 20px 0 20px 0;
-    width: 300px;
+    width: 500px;
 }
 
-.my-name-is {
-    background: var(--colorSecondary);
-    color: var(--colorPrimary);
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    left: 0px;
+.hero {
+    display: flex;
+    justify-content: center;
 }
