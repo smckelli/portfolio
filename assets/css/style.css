@@ -65,3 +65,19 @@ nav a{
     height: 500px;
 
 }
+
+.about-me {
+    justify-content: center;
+}
+
+.about-me-lead {
+    position: absolute;
+    text-align: center;
+    top: 700px;
+    left: 100px;
+}
+
+.about-me-position {
+    position: absolute;
+    left: 500px;
+}
