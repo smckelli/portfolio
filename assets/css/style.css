@@ -6,6 +6,7 @@
     --colorSecondary: #93c7cd;
     --colorTertiary: #445876;
     --borderFlare: 6px solid var(--colorSecondary);
+    --transHover: all 260ms ease-in-out;
 }
 
 /* ** Base CSS ** */
@@ -49,7 +50,7 @@ nav a{
 
 .slogan-position {
     position: absolute;
-    bottom: 350px;
+    bottom: 62%;
     right: 120px;
 }
 
@@ -59,10 +60,8 @@ nav a{
     justify-content: center;
     flex-wrap: wrap;
     background-image: url(../images/wisla-denim5.jpg);
-    display: flex;
-    justify-content: center;
     background-size: cover;
-    height: 50%;
+    height: 25%;
 
 }
 
@@ -73,19 +72,67 @@ nav a{
 .about-me-lead {
     position: absolute;
     text-align: center;
-    top: 75%;
+    top: 45%;
     left: 100px;
 }
 
 .vertical-line {
     justify-content: space-between;
         border-right: 6px solid #30333c;
-        height: 200px;
+        height: 100px;
         left: 5%;
+}
+
+.work-lead {
+    position: absolute;
+    text-align: center;
+    font-size: 34px;
+    bottom: 200px;
+    left: 135px;
+    margin: 20px;
 }
 
 .about-me-position {
     position: absolute;
-    top: 75%;
-    left: 500px;
+    top: 45%;
+    left: 300px;
 }
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #30333c;
+    background-size: cover;
+    color: white;
+    margin: 15px;
+    max-width: 100%;
+    height: 240px;
+    border: var(--borderFlare);
+    position: relative;
+    border: var(--borderFlare);
+    transition: var(--transHover);
+    border-radius: var(--borderRad);
+  }
+  .gallery-item:hover {
+    background-image: url(../images/tucepi-surf2.jpg);
+    border-color: white;
+    border-radius: var(--borderRadReverse);
+    border: 6px #30333c dashed;
+  }
+
+.gallery-item-position {
+    position: absolute;
+    bottom: 50px;
+    left: 300px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
