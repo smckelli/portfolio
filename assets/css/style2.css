@@ -15,7 +15,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* ** Elements ** */
+/* ** Elements for the header** */
 
 html,
 body {
@@ -39,14 +39,16 @@ nav a{
     margin: 0 50px;
 }
 
-.name-container {
+.nametag {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     text-align: right;
     justify-content: space-around;
     background: var(--colorSecondary);
     width: 500px;
 }
+
+/* Elements for the hero */
 
 .slogan-position {
     position: absolute;
@@ -65,42 +67,38 @@ nav a{
 
 }
 
-.about-me {
-    justify-content: center;
-}
+/* Elements of the body */
 
-.about-me-lead {
-    position: absolute;
-    text-align: center;
-    top: 45%;
-    left: 100px;
-}
-
-.vertical-line {
+.leftSide {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-        border-right: 6px solid #30333c;
-        height: 100px;
-        left: 5%;
+    color: #30333c;
+    text-align: left;
+    margin: 50px;
 }
 
-.work-lead {
-    position: absolute;
-    text-align: center;
-    font-size: 34px;
-    bottom: 200px;
-    left: 135px;
-    margin: 20px;
+.aboutMePad {
+    padding-bottom: 8%;
+    left: 10px;
 }
 
-.about-me-position {
-    position: absolute;
-    top: 45%;
-    left: 300px;
-}
-.contact-me {
+
+.rightSide {
+    display:flex;
+    flex-direction: row;
     position: relative;
-    top: 300px;
+    flex-wrap: nowarap;
+    justify-content: space-between;
+    color: #30333c
+}
 
+.mainBody {
+    margin: 0 0 20px 300px;
+    position: absolute;
+    /* padding: 10%; */
+    text-align: left;
 }
 
 .gallery-item {
@@ -125,13 +123,14 @@ nav a{
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
+    background-size: cover;
   }
 
 .gallery-item-position {
-    position: absolute;
+    position: relative;
     bottom: 50px;
-    width: 1550px;
-    left: 300px;
+    width: 1500px;
+
     /* left: 300px; */
 }
 
