@@ -46,6 +46,7 @@ nav a{
     justify-content: space-around;
     background: var(--colorSecondary);
     width: 500px;
+    font-size: 20px;
 }
 
 /* Elements for the hero */
@@ -61,7 +62,7 @@ nav a{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-image: url(../images/wisla-denim5.jpg);
+    background-image: url(../images/wisla-denim6.jpg);
     background-size: cover;
     height: 25%;
 
@@ -82,6 +83,7 @@ nav a{
 .aboutMePad {
     padding-bottom: 8%;
     left: 10px;
+    font-size: 40px;
 }
 
 
@@ -111,7 +113,7 @@ nav a{
     color: white;
     margin: 15px;
     max-width: 100%;
-    height: 240px;
+    height: 540px;
     border: var(--borderFlare);
     position: relative;
     border: var(--borderFlare);
@@ -119,7 +121,7 @@ nav a{
     border-radius: var(--borderRad);
   }
   .gallery-item:hover {
-    background-image: url(../images/tucepi-surf2.jpg);
+    background-image: url(../images/hero-bg2.jpg);
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
@@ -140,5 +142,16 @@ nav a{
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+  }
+
+  .nametagGallery {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: space-around;
+    background: var(--colorSecondary);
+    width: 300px;
+    font-size: 50px;
+}
   }
   
