@@ -71,16 +71,16 @@ nav a{
 /* Elements of the body */
 
 .leftSide {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
     color: #30333c;
     text-align: left;
     margin: 50px;
 }
 
-.aboutMePad {
+.aboutMePad, .workPad, .footPad {
     padding-bottom: 8%;
     left: 10px;
     font-size: 40px;
@@ -91,7 +91,7 @@ nav a{
     display:flex;
     flex-direction: row;
     position: relative;
-    flex-wrap: nowarap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     color: #30333c
 }
@@ -111,7 +111,7 @@ nav a{
     background: #30333c;
     background-size: cover;
     color: white;
-    margin: 15px;
+    margin: 30px;
     max-width: 100%;
     height: 540px;
     border: var(--borderFlare);
@@ -129,19 +129,33 @@ nav a{
   }
 
 .gallery-item-position {
-    position: relative;
+    /* position: relative; */
     bottom: 50px;
     width: 1500px;
 
     /* left: 300px; */
 }
 
-#gallery {
+/* #gallery {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     max-width: 1200px;
+  } */
+
+  .gallery1 {
+      display: grid;
+      grid-template-columns: 700px 700px;
+      grid-template-rows: auto;
+    
+      justify-content: space-around;
+      box-sizing: border-box;
+      /* width: 400px;
+      height: 200px; */
+      margin-left: 5px;
+      margin-right: auto;
+
   }
 
   .nametagGallery {
@@ -150,8 +164,47 @@ nav a{
     text-align: right;
     justify-content: space-around;
     background: var(--colorSecondary);
-    width: 300px;
+    width: 500px;
     font-size: 50px;
 }
+
+.nametagGallerySmall {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: space-around;
+    background: var(--colorSecondary);
+    width: 300px;
+    font-size: 30px;
+}
+
+.gallerySmall {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    background: #30333c;
+    background-size: cover;
+    color: white;
+    margin: 15px;
+    width: 600px;
+    height: 300px;
+    border: var(--borderFlare);
+    position: relative;
+    border: var(--borderFlare);
+    transition: var(--transHover);
+    border-radius: var(--borderRad);
   }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap;
+    justify-content: space-between; */
+    color: #30333c;
+    text-align: left;
+    margin: 50px;
+}
   
