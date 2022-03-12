@@ -82,10 +82,11 @@ nav a{
     left: 5%;
 }
 
-.aboutMePad, .workPad, .footPad {
+.aboutMePad, .workPad {
     padding-bottom: 75%;
     left: 10px;
     font-size: 40px;
+    text-align: right;
 }
 
 
@@ -207,14 +208,46 @@ nav a{
     background-size: cover;
   }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap;
-    justify-content: space-between; */
-    color: #30333c;
-    text-align: left;
-    margin: 50px;
-    bottom: 50px;
-}
-  
+  .footPos {
+      padding: 250px;
+      bottom: 0;
+  }
+
+  .nametagFoot {
+      font-size: 38px;
+      justify-content: space-between;
+      align-items: left;
+      padding: 100px 0 0 0;
+  }
+
+  footer a {
+      color: #30333c;
+      padding: 0 50px 0 40px;
+
+  }
+
+  footer {
+      justify-content: left;
+  }
+
+  .footPad {
+    padding-bottom: 75%;
+    left: 10px;
+    font-size: 40px;
+    margin: 1100px 0 20px 0;
+    position: absolute;
+    /* padding: 10%; */
+    text-align: right;
+    left: 5%;
+  }
+
+/* .footer {
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    /* height: 40px;
+    background: grey; */
+/* }
+   */
