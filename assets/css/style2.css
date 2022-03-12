@@ -100,7 +100,7 @@ nav a{
 }
 
 .mainBody {
-    margin: 0 0 20px 300px;
+    margin: 20px 0 20px 300px;
     position: absolute;
     /* padding: 10%; */
     text-align: left;
@@ -115,6 +115,7 @@ nav a{
     background-size: cover;
     color: white;
     margin: 60px auto 30px 30px;
+    text-decoration: none;
     max-width: 100%;
     height: 540px;
     border: var(--borderFlare);
@@ -125,11 +126,12 @@ nav a{
   }
   .gallery-item:hover {
     background-image: url(../images/hero-bg2.jpg);
-    border-color: white;
-    border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
     background-size: cover;
   }
+  /* .hide {
+      display: none;
+  } */
 
 .gallery-item-position {
     position: relative; 
