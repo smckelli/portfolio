@@ -33,7 +33,7 @@ header {
     height: 150px;
 }
 
-nav a{
+nav a {
     color: var(--colorSecondary);
     font-weight: bold;
     font-size: 22px;
@@ -82,16 +82,17 @@ nav a{
     left: 5%;
 }
 
-.aboutMePad, .workPad {
+.aboutMePad,
+.workPad {
     padding-bottom: 75%;
-    left: 10px;
+    left: 10vw;
     font-size: 40px;
     text-align: right;
 }
 
 
 .rightSide {
-    display:flex;
+    display: flex;
     flex-direction: row;
     position: relative;
     flex-wrap: nowrap;
@@ -100,7 +101,7 @@ nav a{
 }
 
 .mainBody {
-    margin: 20px 0 20px 300px;
+    margin: 2vw 0 20vw 14vw;
     position: absolute;
     /* padding: 10%; */
     text-align: left;
@@ -113,57 +114,41 @@ nav a{
     align-items: flex-start;
     background: #30333c;
     background-size: cover;
-    color: white;
+    color: #ededf6;
     margin: 60px auto 30px 30px;
     text-decoration: none;
     max-width: 100%;
     height: 540px;
     border: var(--borderFlare);
     position: relative;
-    border: var(--borderFlare);
     transition: var(--transHover);
-    border-radius: var(--borderRad);
-  }
-  .gallery-item:hover {
+}
+
+.gallery-item:hover {
     background-image: url(../images/hero-bg2.jpg);
     border: 6px #30333c solid;
     background-size: cover;
-  }
-  /* .hide {
-      display: none;
-  } */
-
-.gallery-item-position {
-    position: relative; 
-    bottom: 50px;
-    width: 1500px;
-
-    /* left: 300px; */
 }
 
-/* #gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1200px;
-  } */
+.gallery-item-position {
+    position: relative;
+    bottom: 50px;
+    width: 1500px;
+}
 
-  .gallery1 {
-      display: grid;
-      grid-template-columns: 700px 700px;
-      grid-template-rows: auto;
-    
-      justify-content: space-around;
-      box-sizing: border-box;
-      /* width: 400px;
-      height: 200px; */
-      margin-left: 65px;
-      margin-right: auto;
 
-  }
+.gallery1 {
+    display: grid;
+    grid-template-columns: 700px 700px;
+    grid-template-rows: auto;
 
-  .nametagGallery {
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin-left: 65px;
+    margin-right: auto;
+}
+
+.nametagGallery {
     display: flex;
     align-items: center;
     text-align: right;
@@ -189,10 +174,9 @@ nav a{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-start; */
     background: #30333c;
     background-size: cover;
-    color: white;
+    color: #ededf6;
     margin: 15px;
     width: 600px;
     height: 300px;
@@ -201,55 +185,68 @@ nav a{
     border: var(--borderFlare);
     transition: var(--transHover);
     border-radius: var(--borderRad);
-  }
-  .gallerySmall:hover {
+}
+
+.gallerySmall:hover {
     background-image: url(../images/tucepi-surf3.jpg);
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
     background-size: cover;
-  }
+}
 
-  .footPos {
-      padding: 250px;
-      bottom: 0;
-  }
+.footPos {
+    padding: 250px;
+    bottom: 0;
+}
 
-  .nametagFoot {
-      font-size: 38px;
-      justify-content: space-between;
-      align-items: left;
-      padding: 100px 0 0 0;
-  }
+.nametagFoot {
+    font-size: 38px;
+    justify-content: space-between;
+    align-items: left;
+    padding: 100px 0 0 0;
+}
 
-  footer a {
-      color: #30333c;
-      padding: 0 50px 0 40px;
+footer a {
+    color: #30333c;
+    padding: 0 50px 0 40px;
 
-  }
+}
 
-  footer {
-      justify-content: left;
-  }
+footer {
+    justify-content: left;
+}
 
-  .footPad {
+.footPad {
     padding-bottom: 75%;
     left: 10px;
     font-size: 40px;
     margin: 1100px 0 20px 0;
     position: absolute;
-    /* padding: 10%; */
     text-align: right;
     left: 5%;
-  }
+}
 
-/* .footer {
-    position: relative;
-    padding: 10px 10px 0px 10px;
-    bottom: 0;
-    width: 100%;
-    /* Height of the footer*/ 
-    /* height: 40px;
-    background: grey; */
-/* }
-   */
+@media (max-width: 767px) {
+
+    header,
+    .body {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header nav a {
+        color: var(--brandSecondary);
+        font-size: 14px;
+        margin: 0 10px;
+    }
+
+    #hero h1 {
+        font-size: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+}
