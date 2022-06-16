@@ -138,7 +138,7 @@ p {
 
 /* mouse hover changes box feature */
 .gallery-item:hover {
-    background-image: url(../images/meditation-buddy.gif);
+    background-image: url(../images/streamline-screenshot.jpg);
     border: 6px #30333c solid;
     background-size: cover;
 }
@@ -206,7 +206,7 @@ a:link {
 }
 
 .gallerySmall:hover {
-    background-image: url(../images/tucepi-surf3.jpg);
+    background-image: url(../images/screenshotSked.png);
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
@@ -214,7 +214,7 @@ a:link {
 }
 
 .gallerySmall1:hover {
-    background-image: url(../images/screenshotSked.png);
+    background-image: url(../images/meditation-buddy.gif);
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
