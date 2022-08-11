@@ -138,7 +138,7 @@ p {
 
 /* mouse hover changes box feature */
 .gallery-item:hover {
-    background-image: url(../images/streamline-screenshot.jpg);
+    background-image: url(../images/2DoScreenshot.png);
     border: 6px #30333c solid;
     background-size: cover;
 }
@@ -230,7 +230,7 @@ a:link {
 }
 
 .gallerySmall3:hover {
-    background-image: url(../images/screenshot1.jpg);
+    background-image: url(../images/streamline-screenshot.jpg);
     border-color: white;
     border-radius: var(--borderRadReverse);
     border: 6px #30333c solid;
